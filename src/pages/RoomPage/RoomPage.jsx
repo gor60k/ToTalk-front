@@ -7,22 +7,22 @@ import { Sidebar } from '../../components/Sidebar/Sidebar';
 import { RoomSidebar } from './RoomSidebar';
 import { CATEGORIES_ROUTE } from '../../utils/consts';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Context } from '../../context';
-import { Colors } from '../../utils/colors';
+// import { Context } from '../../context';
+// import { Colors } from '../../utils/colors';
 
 export const RoomPage = (props) => {
     const params = useParams();
-    const [chatLog, setChatLog] = useState('');
-    const [messageInput, setMessageInput] = useState('');
+    // const [chatLog, setChatLog] = useState(''); 
+    const [messageInput, setMessageInput] = useState('');   
     const [messages, setMessages] = useState([]);
-    const [message, setMessage] = useState({});
+    // const [message, setMessage] = useState({});
     const [user, setUser] = useState({});
     const [bool, setBool] = useState(false);
     const [room, setRoom] = useState({});
     const chatSocketRef = useRef(null);
     const messageContainerRef = useRef(null);
 
-    const { randomColor } = useContext(Context)
+    // const { randomColor } = useContext(Context)
 
     const navigate = useNavigate();
 
